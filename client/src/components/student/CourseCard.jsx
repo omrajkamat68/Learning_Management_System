@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 const CourseCard = ({ course }) => {
   const { currency, calculateRating } = useContext(AppContext);
 
+  if (!course || !course.educator) {
+    return null; // Prevent rendering if data is missing
+  }
+
   return (
     <Link
       to={"/course/" + course._id}
@@ -15,7 +19,7 @@ const CourseCard = ({ course }) => {
       <img className="w-full" src={course.courseThumbnail} alt="" />
       <div className="p-3 text-left">
         <h3 className="text-base font-semibold">{course.courseTitle}</h3>
-        <p className="text-gray-500">Mernstack</p>
+        <p className="text-gray-500">{course.educator.name}</p>
         <div className="flex items-center space-x-2">
           <p>{calculateRating(course)}</p>
           <div className="flex">
