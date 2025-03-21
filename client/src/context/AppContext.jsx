@@ -21,8 +21,7 @@ export const AppContextProvider = (props) => {
   const [allCourses, setAllCourses] = useState([]);
   const [isEducator, setIsEducator] = useState(false);
   const [enrolledCourses, setEnrolledCourses] = useState([]);
-  // const [userData, setUserData] = useState(null);
-  const [userData, setUserData] = useState({}); // Instead of null
+  const [userData, setUserData] = useState(null);
 
   // Fetch All Courses
   const fetchAllCourses = async () => {
@@ -40,27 +39,6 @@ export const AppContextProvider = (props) => {
   };
 
   // Fetch User Data
-  // const fetchUserData = async () => {
-  //   if (user.publicMetadata === "educator") {
-  //     setIsEducator(true);
-  //   }
-
-  //   try {
-  //     const token = await getToken();
-
-  //     const { data } = await axios.get(backendUrl + "/api/user/data", {
-  //       headers: { Authorization: `Bearer ${token}` },
-  //     });
-
-  //     if (data.success) {
-  //       setUserData(data.user);
-  //     } else {
-  //       toast.error(data.message);
-  //     }
-  //   } catch (error) {
-  //     toast.error(error.message);
-  //   }
-  // };
 
   const fetchUserData = async () => {
     try {
