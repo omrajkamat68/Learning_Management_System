@@ -4,7 +4,11 @@ Here's a README for your Git repository:
 
 # 🎓 Learning Management System (LMS)  
 
-A full-featured Learning Management System (LMS) built using the **MERN stack** and **React + Vite**. This platform allows students to create profiles, purchase courses, and watch them. Additionally, users can become educators and publish their own courses.  
+A full-featured Learning Management System (LMS) built using the **MERN stack** and **React + Vite**. This platform allows students to create profiles, purchase courses, and watch them. Additionally, users can become educators and publish their own courses.
+
+## 🚀 LIVE DEMO  
+
+### 🔗 **LMS Frontend:** **https://lms-frontend-six-ruby.vercel.app/**
 
 ## 🚀 Features  
 
